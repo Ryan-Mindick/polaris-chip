@@ -18,6 +18,13 @@
     }
     polaris-chip {
       margin: 16px;
+      --polaris-chip-background-color: azure;
+    }
+    a {
+      margin: 16px;
+      color: red;
+      background-color: azure;
+      padding: 25px; 
     }
   </style>
   <title>polaris-chip / my-card</title>
@@ -31,8 +38,15 @@
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
   <polaris-chip title="Grants and donations"></polaris-chip>
 
+  <a href="https://psu.edu" target="_blank">PSU</a>
+
   <h1>my-card</h1>
+  <my-card image = "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png&w=350&h=254" title = "Saquon"></my-card>
   <my-card></my-card>
+  <my-card></my-card>
+  <my-card></my-card>
+  <my-card></my-card>
+
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>

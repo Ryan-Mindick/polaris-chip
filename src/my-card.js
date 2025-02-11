@@ -15,6 +15,7 @@ export class MyCard extends LitElement {
   constructor() {
     super();
     this.title = "My card";
+    this.image = "https://via.placeholder.com/150";
   }
 
   static get styles() {
@@ -26,12 +27,16 @@ export class MyCard extends LitElement {
   }
 
   render() {
-    return html`<div>${this.title}</div>`;
+    return html`
+    <div>
+      <img src="${this.image}" alt="${this.title}"/>
+    </div>`;
   }
 
   static get properties() {
     return {
       title: { type: String },
+      image: { type: String },
     };
   }
 }

@@ -25,11 +25,7 @@ export class MyCard extends LitElement {
     return css`
       :host {
         display: block;
-      
-      //:host ([fancy]) .card {
-      //  background-color: blue;
-      //  color: white;
-      
+
         .button {
           padding: 6px;
           border-radius: 20px;
@@ -88,3 +84,6 @@ export class MyCard extends LitElement {
 globalThis.customElements.define(MyCard.tag, MyCard);
 
 
+//:host ([fancy]) .card {
+//  background-color: blue;
+//  color: white;

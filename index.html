@@ -41,16 +41,24 @@
   <a href="https://psu.edu" target="_blank">PSU</a>
 
   <h1>my-card</h1>
-  <my-card image = "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png&w=350&h=254" title = "Saquon" description = "Offensive Player of the Year"></my-card>
-  <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgB03TiGGZbFymAJRUrRwnSLTL3Mpuv4zA-A&s" title = "Super Bowl MVP" description = "The best QB in the league"></my-card>
-  <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65lrAIDLFGAIxrJ8yUpgQFxzwHBa90jXtpw&s" title = "Inner Excellence" description = "Channeled his Inner Excellence"></my-card>
-  <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa8w5XVms-0mOPWetQSjbdD1dtGpoAbr2oYA&s" title = "Coach Of The Year" description = "Somehow didn't get fired"></my-card>
-  <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMunUeCI06tqscnI_aXK2JPoDIQyYw5N2_8g&s" title = "Slim Reaper" description = "Small but packs a punch"></my-card>
+  <button>Toggle</button>
+  <script>
+    const button = document.querySelector('button');
+    button.addEventListener('click', () => {
+      const card = document.querySelector('my-card');
+      card.fancy = !card.fancy;
+    });
+  </script>
+
+    <my-card image = "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png&w=350&h=254" title = "Saquon Barkley" description = "Offensive Player of the Year"></my-card>
+    <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgB03TiGGZbFymAJRUrRwnSLTL3Mpuv4zA-A&s" title = "Jalen Hurts" description = "The best QB in the league"></my-card>
+    <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65lrAIDLFGAIxrJ8yUpgQFxzwHBa90jXtpw&s" title = "A.J. Brown" description = "Channeled his Inner Excellence"></my-card>
+    <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa8w5XVms-0mOPWetQSjbdD1dtGpoAbr2oYA&s" title = "Nick Sirianni" description = "Should've been Coach of the Year"></my-card>
+    <my-card image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMunUeCI06tqscnI_aXK2JPoDIQyYw5N2_8g&s" title = "Devonta Smith" description = "Slim Reaper"></my-card>
 
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
 </body>
-
 </html>

@@ -51,7 +51,7 @@ export class MyCard extends LitElement {
         background-color: #45a717;
         padding: 4px;
         width: 350px;
-        height: 425px;
+        height: 435px;
         border-radius: 20px;
         margin: 10px
       }
@@ -64,6 +64,20 @@ export class MyCard extends LitElement {
       h2 {
         font-size: 10px;
         font-family: Comic Sans MS;
+      }
+
+      details summary {
+        text-align: left;
+        font-size: 20px;
+        padding: 8px 0;
+      }
+
+      details div {
+        border: 2px solid black;
+        text-align: left;
+        padding: 8px;
+        height: 70px;
+        overflow: auto;
       }
     `;
   }
@@ -86,9 +100,9 @@ export class MyCard extends LitElement {
           <img src="${this.image}" alt="${this.title}"/>
           <details ?open="${this.fancy}" @toggle="${this.openChanged}">
             <summary>Description</summary>
-              <div>
-                <slot>${this.description}</slot>
-              </div>
+            <div>
+              <slot>${this.description}</slot>
+            </div>
           </details>
           <button>
             <a class="button" href="https://hax.psu.edu/">Details</a>   

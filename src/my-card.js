@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import "@haxtheweb/meme-maker/meme-maker.js";
 
 /**
  * Now it's your turn. Here's what we need to try and do:
@@ -98,7 +99,7 @@ export class MyCard extends LitElement {
       <div class="card">
         <h1>${this.title}</h1> 
         <h1>Philadelphia Eagles</h1>
-          <img src="${this.image}" alt="${this.title}"/>
+          <img src="${this.image}" alt=""/>
           <details ?open="${this.fancy}" @toggle="${this.openChanged}">
             <summary>Description</summary>
             <div>
@@ -106,9 +107,16 @@ export class MyCard extends LitElement {
             </div>
           </details>
           <button>
-            <a class="button" href="https://hax.psu.edu/">Details</a>   
+            <a class="button" href="https://hax.psu.edu/">Details</a>
           </button>
+          <meme-maker
+            alt="Up your meme game with hax and allow for more accessible memes"
+            image-url="files/giphy.gif"
+            bottom-text="HTML is anything"
+            top-text="HAX is html">
+          </meme-maker>
       </div>`;
+      
   }
 
   static get properties() {

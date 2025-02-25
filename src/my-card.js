@@ -109,14 +109,7 @@ export class MyCard extends LitElement {
           <button>
             <a class="button" href="https://hax.psu.edu/">Details</a>
           </button>
-          <meme-maker
-            alt="Up your meme game with hax and allow for more accessible memes"
-            image-url="files/giphy.gif"
-            bottom-text="HTML is anything"
-            top-text="HAX is html">
-          </meme-maker>
       </div>`;
-      
   }
 
   static get properties() {

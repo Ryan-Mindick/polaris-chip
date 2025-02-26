@@ -32,7 +32,6 @@ export class MyCard extends LitElement {
     return css`
       :host {
         display: inline-block;
-        height: 435px;
         margin: 10px;
       }
 
@@ -57,7 +56,7 @@ export class MyCard extends LitElement {
         padding: 4px;
         width: 350px;
         border-radius: 20px;
-        height: 435px;
+        height: 350px;
 
       }
 
